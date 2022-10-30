@@ -85,5 +85,3 @@ function main() {
         }
     }, 30000);
 };
-
-main();
