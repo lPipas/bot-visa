@@ -12,8 +12,9 @@ client.on('qr', qr => {
     qrcode.generate(qr, { small: true });
 });
 
-client.on('ready', () => {
+client.on('ready', async () => {
     console.log('Client is ready!');
+    await client.sendMessage(numero, 'Arranque el script');
     main();
 });
 
